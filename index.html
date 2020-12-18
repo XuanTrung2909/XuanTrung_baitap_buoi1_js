@@ -166,6 +166,57 @@
     </div>
     <hr>
 
+
+    <!-- bài tập vé phim -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header">
+                      <h1 class="text-center">VÉ PHIM</h1>
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-group">
+                              <label>Tên Phim</label>
+                              <input type="text" class="form-control" id="ten__phim">
+                          </div>
+                          <div class="form-group">
+                            <label>Giá vé người lớn</label>
+                            <input type="number" class="form-control" id="gia__ve__nguoi__lon">
+                        </div>
+                        <div class="form-group">
+                            <label>Giá vé Trẻ Em</label>
+                            <input type="number" class="form-control" id="gia__ve__tre__em">
+                        </div>
+                        <div class="form-group">
+                            <label>Số vé người lớn đã bán</label>
+                            <input type="number" class="form-control" id="so__ve__nguoi__lon">
+                        </div>
+                        <div class="form-group">
+                            <label>Số vé trẻ em đã bán</label>
+                            <input type="number" class="form-control" id="so__ve__tre__em">
+                        </div>
+                        <div class="form-group">
+                            <label>Số phần trăm làm từ thiện</label>
+                            <input type="number" class="form-control" id="so__phan__tram__tu__thien">
+                        </div>
+                          <button class="btn btn-success" onclick="tinhTienPhim(event)">Tính Toán</button>
+                      </form>
+                  </div>
+                  <div class="card-footer d-none" id="footer__ve__phim">
+                      <p>phim: <span id="span__ten__phim"></span></p>
+                    <p>Tổng tiền thu được: <span id="tong__tien__thu__duoc"></span> vnđ</p>
+                    <p>Tiền cho từ thiện: <span id="tien__tu__thien"></span> vnđ</p>
+                    <p>Tiền còn lại: <span id="tien__con__lai"></span> vnđ</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <hr>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -177,5 +228,6 @@
     <script src="./BAITAP3/bai_tap3.js"></script>
     <script src="./BAITAP4/bai_tap4.js"></script>
     <script src="./BAITAP5/bai_tap5.js"></script>
+    <script src="./VEPHIM/ve_phim.js"></script>
   </body>
 </html>
