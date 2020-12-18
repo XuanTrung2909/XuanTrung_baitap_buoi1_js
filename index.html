@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- Bài tập 1 -->
+
+      <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">TÍNH TIỀN LƯƠNG NHÂN VIÊN</h1>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Số Ngày Làm Việc</label>
+                                <input type="number" class="form-control" id="so__ngay">
+                            </div>
+                            <button class="btn btn-success" onclick="tinhLuong(event)">Tính Lương</button>
+                        </form>
+                    </div>
+                    <div class="card-footer d-none" id="footer__tien__luong">
+                        Số Tiền Thực lãnh: <span id="tien__thuc__lanh"></span>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <hr>
+
+      <!-- Bài tập 2 -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header">
+                      <h1 class="text-center">TÍNH GIÁ TRỊ TRUNG BÌNH 5 SỐ</h1>
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-group">
+                              <label>Số Thực 1</label>
+                              <input type="number" class="form-control" id="so__thuc__1">
+                          </div>
+                          <div class="form-group">
+                            <label>Số Thực 2</label>
+                            <input type="number" class="form-control" id="so__thuc__2">
+                        </div>
+                        <div class="form-group">
+                            <label>Số Thực 3</label>
+                            <input type="number" class="form-control" id="so__thuc__3">
+                        </div>
+                        <div class="form-group">
+                            <label>Số Thực 4</label>
+                            <input type="number" class="form-control" id="so__thuc__4">
+                        </div>
+                        <div class="form-group">
+                            <label>Số Thực 5</label>
+                            <input type="number" class="form-control" id="so__thuc__5">
+                        </div>
+                          <button class="btn btn-success" onclick="tinhGiaTriTB(event)">Tính giá trị trung bình</button>
+                      </form>
+                  </div>
+                  <div class="card-footer d-none" id="footer__gia__tri__TB">
+                      Giá trị Trung Bình: <span id="gia__tri__tb"></span>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- bài tập 3 -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header">
+                      <h1 class="text-center">QUY ĐỔI TIỀN</h1>
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-group">
+                              <label>Số tiền USD cần quy đổi</label>
+                              <input type="number" class="form-control" id="so__tien__usd">
+                          </div>
+                          <button class="btn btn-success" onclick="quyDoi(event)">Quy đổi tiền</button>
+                      </form>
+                  </div>
+                  <div class="card-footer d-none" id="footer__quy__doi">
+                      Số tiền quy đổi được là: <span id="tien__vnd"></span> vnđ
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- bài tập 4 -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header">
+                      <h1 class="text-center">TÍNH CHU VI, DIỆN TÍCH HÌNH CHỮ NHẬT</h1>
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-group">
+                              <label>Chiều dài hình chữ nhật</label>
+                              <input type="number" class="form-control" id="chieu__dai">
+                          </div>
+                          <div class="form-group">
+                            <label>chiều rộng hình chữ nhật</label>
+                            <input type="number" class="form-control" id="chieu__rong">
+                        </div>
+                          <button class="btn btn-success" onclick="dienTich(event)">Tính Diện Tích</button>
+                          <button class="btn btn-success" onclick="chuVi(event)">Tính Chu Vi</button>
+                      </form>
+                  </div>
+                  <div class="card-footer d-none" id="footer__hinh__chu__nhat">
+                      <span id="hinh__chu__nhat"></span>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- bài tập 5 -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header">
+                      <h1 class="text-center">TỔNG 2 KÝ SỐ CỦA 1 SỐ CÓ 2 CHỮ SỐ</h1>
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-group">
+                              <label>Nhập số nguyên có 2 chữ số</label>
+                              <input type="number" class="form-control" id="so__nguyen">
+                          </div>
+                          <button class="btn btn-success" onclick="tongHaiKySo(event)">Tính Tổng 2 ký số</button>
+                      </form>
+                  </div>
+                  <div class="card-footer d-none" id="footer__ky__so">
+                      Tổng 2 ký số: <span id="tong__2__ky__so"></span>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="./BAITAP1/bai_tap1.js"></script>
+    <script src="./BAITAP2/bai_tap2.js"></script>
+    <script src="./BAITAP3/bai_tap3.js"></script>
+    <script src="./BAITAP4/bai_tap4.js"></script>
+    <script src="./BAITAP5/bai_tap5.js"></script>
+  </body>
+</html>
